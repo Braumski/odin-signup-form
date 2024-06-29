@@ -55,6 +55,14 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+/* Change the white to any color */
+/* Removes blue background-color on autofill in chrome */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
 
 /* ----------------------------------- */
 
@@ -77,6 +85,7 @@ a {
   text-decoration: none;
   color: rgb(51, 131, 117);
 }
+
 .logo-panel {
   background-image: url(/imgs/douglas-bagg-FB406CKGL0Q-unsplash.jpg);
   background-size: cover;
@@ -165,19 +174,19 @@ a {
   text-transform: uppercase;
 }
 .form-field input {
-  border: 1px solid rgb(75, 75, 75);
+  border: 2px solid rgb(75, 75, 75);
   padding: 6px 10px 6px 10px;
   border-radius: 6px;
 }
 input:focus {
-  border-color: rgb(15, 92, 169);
+  border-color: rgb(83, 137, 192);
 }
 input:valid {
-  border-color: green;
+  border-color: rgb(52, 186, 52);
 }
 
-input:invalid {
-  border-color: red;
+input.required:invalid {
+  border-color: rgb(211, 47, 47);
 }
 .create-account-section {
   padding: var(--form-section-padding);
