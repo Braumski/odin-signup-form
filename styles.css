@@ -185,7 +185,7 @@ input:valid {
   border-color: rgb(52, 186, 52);
 }
 
-input.required:invalid {
+input:invalid:focus {
   border-color: rgb(211, 47, 47);
 }
 .create-account-section {
